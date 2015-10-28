@@ -1,0 +1,20 @@
+{
+  "name": "fancy-checkbox",
+  "authors": [
+    "Peter Graham <peter@wealthsimple.com>"
+  ],
+  "description": "Simplified iCheck module",
+  "main": [],
+  "license": "MIT",
+  "homepage": "https://github.com/wealthsimple/fancy-checkbox",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iCheck": "icheck#~1.0.2"
+  }
+}

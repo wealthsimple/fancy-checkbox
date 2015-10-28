@@ -1,0 +1,41 @@
+.checkbox-fancy, .radio-fancy {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 22px;
+  height: 22px;
+  background: url(src/aero.png) no-repeat;
+  border: none;
+  cursor: pointer; }
+
+.checkbox-fancy {
+  background-position: 0 0; }
+  .checkbox-fancy.hover {
+    background-position: -24px 0; }
+  .checkbox-fancy.checked {
+    background-position: -48px 0; }
+  .checkbox-fancy.disabled {
+    background-position: -72px 0;
+    cursor: default; }
+  .checkbox-fancy.checked.disabled {
+    background-position: -96px 0; }
+
+.radio-fancy {
+  background-position: -120px 0; }
+  .radio-fancy.hover {
+    background-position: -144px 0; }
+  .radio-fancy.checked {
+    background-position: -168px 0; }
+  .radio-fancy.disabled {
+    background-position: -192px 0;
+    cursor: default; }
+  .radio-fancy.checked.disabled {
+    background-position: -216px 0; }
+
+/* HiDPI support */
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .checkbox-fancy, .radio-fancy {
+    background-image: url(src/aero@2x.png);
+    background-size: 240px 24px; } }

@@ -8,7 +8,7 @@ var cssBase64 = require('gulp-css-base64');
 gulp.task('scripts', function() {
   return gulp.src(['./bower_components/iCheck/icheck.js', './src/fancy-checkbox.js'])
     .pipe(concat('fancy-checkbox.js'))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('sass', function () {
@@ -22,7 +22,7 @@ gulp.task('inline', function() {
     .pipe(cssBase64({
       extensionsAllowed: ['.png']
     }))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./dist'));
 })
 
 gulp.task('default', ['scripts', 'sass', 'inline']);

@@ -17,12 +17,12 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./src'));
 });
 
-gulp.task('inline', function() {
+gulp.task('inline', ['sass'], function() {
   return gulp.src('./src/fancy-checkbox.css')
     .pipe(cssBase64({
       extensionsAllowed: ['.png']
     }))
     .pipe(gulp.dest('./dist'));
-})
+});
 
 gulp.task('default', ['scripts', 'sass', 'inline']);

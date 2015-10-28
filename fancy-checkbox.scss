@@ -1,4 +1,4 @@
-.icheckbox_square-aero, .iradio_square-aero {
+.checkbox-fancy, .radio-fancy {
   display: inline-block;
   *display: inline;
   vertical-align: middle;
@@ -11,7 +11,7 @@
   cursor: pointer;
 }
 
-.icheckbox_square-aero {
+.checkbox-fancy {
   background-position: 0 0;
   &.hover {
     background-position: -24px 0;
@@ -28,7 +28,7 @@
   }
 }
 
-.iradio_square-aero {
+.radio-fancy {
   background-position: -120px 0;
   &.hover {
     background-position: -144px 0;
@@ -47,7 +47,7 @@
 
 /* HiDPI support */
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-  .icheckbox_square-aero, .iradio_square-aero {
+  .checkbox-fancy, .radio-fancy {
     background-image: url(aero@2x.png);
     background-size: 240px 24px;
   }

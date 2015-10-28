@@ -25,4 +25,9 @@ gulp.task('inline', ['sass'], function() {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('default', ['scripts', 'sass', 'inline']);
+gulp.task('watch', function() {
+  gulp.watch(['./src/**/*.scss', './src/**/*.png'], ['sass', 'inline']);
+  gulp.watch(['./src/**/*.js'], ['scripts']);
+});
+
+gulp.task('default', ['scripts', 'sass', 'inline', 'watch']);

@@ -1,3 +1,15 @@
 # fancy-checkbox
 
 Fancy checkboxes and radios. Based on [iCheck](https://github.com/fronteed/icheck) plugin but simplified.
+
+# Installation
+
+    bower install git@github.com:wealthsimple/fancy-checkbox.git --save
+
+Next, include the `dist/fancy-checkbox.js` and `dist/fancy-checkbox.css` on your webpage.
+
+# Usage
+
+This plugin will automatically apply styling to all inputs of `type="checkbox"` and `type="radio"`.
+
+If you wish to disable the styling on a specific input, you must add `data-fancy-disabled="true"` attribute.

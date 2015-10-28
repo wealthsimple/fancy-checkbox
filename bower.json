@@ -4,7 +4,10 @@
     "Peter Graham <peter@wealthsimple.com>"
   ],
   "description": "Simplified iCheck module",
-  "main": [],
+  "main": [
+    "fancy-checkbox.js",
+    "fancy-checkbox.scss",
+  ],
   "license": "MIT",
   "homepage": "https://github.com/wealthsimple/fancy-checkbox",
   "ignore": [

@@ -520,6 +520,11 @@
           checkboxClass: 'checkbox-fancy',
           radioClass: 'radio-fancy'
         });
+
+        // Manually trigger `change` event, since iCheck does not.
+        $input.on("ifChanged", function(e, selector, data) {
+          $input.trigger("change", e, selector, data);
+        });
       }
     });
   }

@@ -17,6 +17,7 @@
     "test",
     "tests",
     "src",
+    "example",
     "README.md"
   ],
   "devDependencies": {

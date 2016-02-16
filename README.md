@@ -4,6 +4,8 @@ Fancy checkboxes and radios. Based on [iCheck](https://github.com/fronteed/ichec
 
 # Installation
 
+First, make sure you have jQuery or Zepto installed.  Next, run the following command:
+
     bower install git@github.com:wealthsimple/fancy-checkbox.git --save
 
 Next, include the `dist/fancy-checkbox.js` and `dist/fancy-checkbox.css` on your webpage.

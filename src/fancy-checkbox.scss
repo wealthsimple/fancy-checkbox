@@ -11,6 +11,19 @@
   cursor: pointer;
 }
 
+.disabled-checkbox-fancy {
+  background-position: -72px 0;
+  cursor: default;
+}
+
+// There is an issue where an input with ng-disabled=true does not properly apply 'disabled' class next
+// to 'checkbox-fancy'. A solution is to wrap that input with an element that contains 'disabled' class.
+.disabled {
+  .checkbox-fancy {
+    @extend .disabled-checkbox-fancy;
+  }
+}
+
 .checkbox-fancy {
   background-position: 0 0;
   &.hover {
@@ -20,11 +33,21 @@
     background-position: -48px 0;
   }
   &.disabled {
-    background-position: -72px 0;
-    cursor: default;
+    @extend .disabled-checkbox-fancy;
   }
   &.checked.disabled {
     background-position: -96px 0;
+  }
+}
+
+.disabled-radio-fancy {
+  background-position: -192px 0;
+  cursor: default;
+}
+
+.disabled {
+  .radio-fancy {
+    @extend .disabled-radio-fancy;
   }
 }
 
@@ -37,8 +60,7 @@
     background-position: -168px 0;
   }
   &.disabled {
-    background-position: -192px 0;
-    cursor: default;
+    @extend .disabled-radio-fancy;
   }
   &.checked.disabled {
     background-position: -216px 0;
@@ -51,4 +73,10 @@
     background-image: url(checkboxes@2x.png);
     background-size: 240px 24px;
   }
+}
+
+.checkbox-fancy-text {
+  top: 2px;
+  position: relative;
+  margin-left: 8px;
 }

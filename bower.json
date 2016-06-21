@@ -1,7 +1,9 @@
 {
   "name": "fancy-checkbox",
   "authors": [
-    "Peter Graham <peter@wealthsimple.com>"
+    "Peter Graham <peter@wealthsimple.com>",
+    "Huda Idrees <huda@wealthsimple.com>",
+    "Dan Godfrey <dan@wealthsimple.com>"
   ],
   "description": "Simplified iCheck module",
   "main": [

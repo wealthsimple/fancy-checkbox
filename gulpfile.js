@@ -6,7 +6,7 @@ var sass = require('gulp-sass');
 var cssBase64 = require('gulp-css-base64');
 
 gulp.task('scripts', function() {
-  return gulp.src(['./bower_components/iCheck/icheck.js', './src/fancy-checkbox.js'])
+  return gulp.src(['./node_modules/icheck/icheck.js', './src/fancy-checkbox.js'])
     .pipe(concat('fancy-checkbox.js'))
     .pipe(gulp.dest('./dist'));
 });

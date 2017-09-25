@@ -21,8 +21,5 @@
     "src",
     "example",
     "README.md"
-  ],
-  "devDependencies": {
-    "iCheck": "icheck#~1.0.2"
-  }
+  ]
 }

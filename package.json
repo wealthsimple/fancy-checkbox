@@ -1,10 +1,26 @@
 {
-  "name": "fancy-checkbox",
-  "private": true,
+  "version": "1.2.0",
+  "name": "@wealthsimple/fancy-checkbox",
+  "authors": [
+    "Peter Graham <peter@wealthsimple.com>",
+    "Huda Idrees <huda@wealthsimple.com>",
+    "Dan Godfrey <dan@wealthsimple.com>"
+  ],
+  "description": "Simplified iCheck module",
+  "main": "dist/fancy-checkbox.js",
+  "css": "dist/fancy-checkbox.css",
+  "license": "MIT",
+  "repository": "https://github.com/wealthsimple/fancy-checkbox",
+  "homepage": "https://github.com/wealthsimple/fancy-checkbox",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "node_modules/.bin/gulp build",
+    "prepublishonly": "npm run build"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-css-base64": "^1.3.2",
-    "gulp-sass": "^2.1.0"
+    "gulp-sass": "^3.1.0"
   }
 }

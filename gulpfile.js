@@ -30,4 +30,6 @@ gulp.task('watch', function() {
   gulp.watch(['./src/**/*.js'], ['scripts']);
 });
 
+gulp.task('build', ['scripts', 'sass', 'inline']);
+
 gulp.task('default', ['scripts', 'sass', 'inline', 'watch']);

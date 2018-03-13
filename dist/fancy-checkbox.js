@@ -516,9 +516,13 @@
     $inputs.each(function() {
       var $input = $(this);
       if ($input.parents('[data-fancy-disabled="true"]').length === 0) {
+        radioClass = 'radio-fancy';
+        if ($input.hasClass('pretty')) {
+          radioClass += ' pretty';
+        }
         $input.iCheck({
           checkboxClass: 'checkbox-fancy',
-          radioClass: 'radio-fancy'
+          radioClass: radioClass,
         });
 
         // Manually trigger `change` event, since iCheck does not.

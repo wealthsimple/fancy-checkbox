@@ -17,3 +17,12 @@ This plugin will automatically apply styling to all inputs of `type="checkbox"` 
 If you wish to disable the styling on a specific input, you must add `data-fancy-disabled="true"` attribute.
 
 You can also disable styling on all child inputs by adding `data-fancy-disabled="true"` to any ancestor element.
+
+# Generating Dist
+
+1. Run `npm install` to update/install dependencies
+2. Run `npm prepublishOnly` to generate dist. 
+
+# Making a new release
+1. Bump the version in `package-lock.json`
+2. Run `npm publish` to publish new version

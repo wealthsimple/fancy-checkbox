@@ -6,6 +6,10 @@
   padding: 0;
   width: 22px;
   height: 22px;
+  &.pretty {
+    width: 24px;
+    height: 24px;
+  }
   background: url(checkboxes.png) no-repeat;
   border: none;
   cursor: pointer;
@@ -53,11 +57,20 @@
 
 .radio-fancy {
   background-position: -120px 0;
+  &.pretty {
+    background-position: -240px 0;
+  }
   &.hover {
     background-position: -144px 0;
+    &.pretty {
+      background-position: -266px;
+    }
   }
   &.checked {
     background-position: -168px 0;
+    &.pretty {
+      background-position: -292px;
+    }
   }
   &.disabled {
     @extend .disabled-radio-fancy;
